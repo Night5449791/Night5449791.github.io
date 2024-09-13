@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheeseClient</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            background: linear-gradient(45deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff);
+            -webkit-background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            animation: glow 1s infinite alternate;
+        }
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            }
+            to {
+                text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+            }
+        }
+        .features {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .features div {
+            width: 45%;
+        }
+        .features img {
+            width: 100%;
+            transform: perspective(1000px) rotateY(20deg);
+            transition: transform 0.5s;
+        }
+        .features img:hover {
+            transform: perspective(1000px) rotateY(0deg);
+        }
+    </style>
+
+    <style>
+        body {
+        	font-family: 'Quicksand', sans-serif;
+        	margin: 0;
+        	min-height: 100vh;
+        	background-color: #93c5e4;
+        	background-image: radial-gradient(closest-side, rgba(235, 105, 78, 1), rgba(235, 105, 78, 0)),
+        	radial-gradient(closest-side, rgb(11, 243, 212), rgba(243, 11, 164, 0)),
+        	radial-gradient(closest-side, rgba(254, 234, 131, 1), rgba(254, 234, 131, 0)),
+        	radial-gradient(closest-side, rgba(170, 142, 245, 1), rgba(170, 142, 245, 0)),
+        	radial-gradient(closest-side, rgba(248, 192, 147, 1), rgba(248, 192, 147, 0));
+        	background-size: 130vmax 130vmax,
+        	80vmax 80vmax,
+        	90vmax 90vmax,
+        	110vmax 110vmax,
+        	90vmax 90vmax;
+        	background-position: -80vmax -80vmax,
+        	60vmax -30vmax,
+        	10vmax 10vmax,
+        	-30vmax -10vmax,
+        	50vmax 50vmax;
+        	background-repeat: no-repeat;
+        	animation: 2s movement linear infinite;
+        }
+        
+        @keyframes movement {
+        	0%,
+        	100% {
+        		background-size: 130vmax 130vmax,
+        		80vmax 80vmax,
+        		90vmax 90vmax,
+        		110vmax 110vmax,
+        		90vmax 90vmax;
+        		background-position: -80vmax -80vmax,
+        		60vmax -30vmax,
+        		10vmax 10vmax,
+        		-30vmax -10vmax,
+        		50vmax 50vmax;
+        	}
+        	25% {
+        		background-size: 100vmax 100vmax,
+        		90vmax 90vmax,
+        		100vmax 100vmax,
+        		90vmax 90vmax,
+        		60vmax 60vmax;
+        		background-position: -60vmax -90vmax,
+        		50vmax -40vmax,
+        		0vmax -20vmax,
+        		-40vmax -20vmax,
+        		40vmax 60vmax;
+        	}
+        	50% {
+        		background-size: 80vmax 80vmax,
+        		110vmax 110vmax,
+        		80vmax 80vmax,
+        		60vmax 60vmax,
+        		80vmax 80vmax;
+        		background-position: -50vmax -70vmax,
+        		40vmax -30vmax,
+        		10vmax 0vmax,
+        		20vmax 10vmax,
+        		30vmax 70vmax;
+        	}
+        	75% {
+        		background-size: 80vmax 80vmax,
+        		90vmax 90vmax,
+        		100vmax 100vmax,
+        		90vmax 90vmax,
+        		70vmax 70vmax;
+        		background-position: -50vmax -40vmax,
+        		50vmax -30vmax,
+        		20vmax 0vmax,
+        		-10vmax 10vmax,
+        		40vmax 60vmax;
+        	}
+        }
+        @keyframes gradient {
+        	0% {
+        		background-position: 0% 50%;
+        	}
+        	50% {
+        		background-position: 100% 50%;
+        	}
+        	100% {
+        		background-position: 0% 50%;
+        	}
+        }
+        div.features{
+        	box-shadow: 2px 5px 13px rgba(0, 0, 0, 0.2);
+        	border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>CheeseClient</h1>
+        <div class="features">
+            <div class="description">
+                <h2>我们的特点</h2>
+                <ul>
+                    <li>华丽的视觉，但不用担心性能</li>
+                    <li>简洁的UI，功能不用挨个翻</li>
+                    <li>强大的配置，配置全都自带</li>
+                    <li>永久的公益，永远不会收费</li>
+                    <li>优质的环境，玩家们都在QQ群里交流</li>
+                </ul>
+            </div>
+            <div class="image">
+                <img src="https://img.picui.cn/free/2024/09/11/66e19f602436a.png" alt="CheeseClient Image">
+                <h6>CheeseBounce魔水初代截图</h6>
+            </div>
+        </div>
+        <h2>如何获取？进入QQ群！698068787</h2>
+		<div class="problums">
+		<ul>
+			<li>Q：为什么我的电脑下载了CheeseClient/CheeseBounce/CheeseNEL/CheeseNELpro/CheeseNextGen却没有办法使用？</li>
+			<li>A：可能是你的电脑并不兼容，请仔细阅读说明文件，下载jdk8&jdk17，更新至win7以上的系统...</li>
+			<li>Q：CheeseBounce的配置在哪里？</li>
+			<li>A：在聊天栏输入.config load bw可以加载起床战争配置</li>
+			<li>A：在聊天栏输入.config load sw可以加载空岛战争配置</li>
+			<li>A：在聊天栏输入.config load pvp可以加载竞技场/天坑/职业战争配置</li>
+			<li>A：在聊天栏输入.config load drsc可以加载生存配置</li>
+			<li>A：在聊天栏输入.config load yingshe可以加载记忆速建配置</li>
+			<li>Q：其他Cheese的配置也和CheeseBounce一样吗？</li>
+			<li>A：可能略微不同，但是大致一样，反正不会弱</li>
+			<li>其他问题？进群提问！</li>
+        </ul>
+		</div>
+</body>
+</html>
